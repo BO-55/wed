@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic CSS Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <div class="container">
+        <div class="header">
+            <h1>Futuristic CSS Generator</h1>
+            <button id="themeToggle" title="Toggle Theme">☀️</button>
+        </div>
+        <div class="generator">
+            <div class="element-selector">
+                <label>Select Element:</label>
+                <select id="elementType">
+                    <option value="button">Button</option>
+                    <option value="card">Card</option>
+                    <option value="input">Text Input</option>
+                    <option value="badge">Badge</option>
+                </select>
+            </div>
+            <div class="content-input">
+                <h3>Your Website Content</h3>
+                <textarea id="websiteContent" placeholder="Enter your HTML or text (e.g., <button>Click</button>)"></textarea>
+                <div class="content-preview">
+                    <h4>Content Preview</h4>
+                    <div id="contentPreview"></div>
+                </div>
+            </div>
+            <div class="controls" id="controls">
+                <!-- Controls dynamically populated -->
+            </div>
+            <div class="preview">
+                <h3>Element Preview</h3>
+                <div id="previewArea">
+                    <!-- Element preview dynamically updated -->
+                </div>
+            </div>
+            <div class="output">
+                <h3>Generated CSS</h3>
+                <pre id="cssOutput"></pre>
+                <button id="copyButton">Copy CSS</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
